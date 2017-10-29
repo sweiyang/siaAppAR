@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C0CA9C51FA2E08C00FFA3E0 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0CA9C41FA2E08C00FFA3E0 /* Box.swift */; };
 		8C429B211FA167810005753C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C429B201FA167810005753C /* AppDelegate.swift */; };
-		8C429B231FA167810005753C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C429B221FA167810005753C /* ViewController.swift */; };
 		8C429B261FA167810005753C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C429B241FA167810005753C /* Main.storyboard */; };
 		8C429B281FA167810005753C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C429B271FA167810005753C /* Assets.xcassets */; };
 		8C429B2B1FA167810005753C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C429B291FA167810005753C /* LaunchScreen.storyboard */; };
 		8C429B361FA167810005753C /* siaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C429B351FA167810005753C /* siaAppTests.swift */; };
 		8C429B411FA167810005753C /* siaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C429B401FA167810005753C /* siaAppUITests.swift */; };
+		8C429B511FA16E900005753C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C429B4E1FA1696D0005753C /* ViewController.swift */; };
+		8CAFC57F1FA174F700ED24AD /* SphereNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFC57E1FA174F700ED24AD /* SphereNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C0CA9C41FA2E08C00FFA3E0 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		8C429B1D1FA167810005753C /* siaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = siaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C429B201FA167810005753C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C429B221FA167810005753C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8C429B251FA167810005753C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C429B271FA167810005753C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C429B2A1FA167810005753C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		8C429B3C1FA167810005753C /* siaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = siaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C429B401FA167810005753C /* siaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = siaAppUITests.swift; sourceTree = "<group>"; };
 		8C429B421FA167810005753C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C429B4E1FA1696D0005753C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CAFC57E1FA174F700ED24AD /* SphereNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphereNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				8C429B201FA167810005753C /* AppDelegate.swift */,
-				8C429B221FA167810005753C /* ViewController.swift */,
+				8C429B4E1FA1696D0005753C /* ViewController.swift */,
 				8C429B241FA167810005753C /* Main.storyboard */,
 				8C429B271FA167810005753C /* Assets.xcassets */,
 				8C429B291FA167810005753C /* LaunchScreen.storyboard */,
 				8C429B2C1FA167810005753C /* Info.plist */,
+				8CAFC57E1FA174F700ED24AD /* SphereNode.swift */,
+				8C0CA9C41FA2E08C00FFA3E0 /* Box.swift */,
 			);
 			path = siaApp;
 			sourceTree = "<group>";
@@ -187,6 +193,9 @@
 		8C429B151FA167810005753C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					UILabel,
+				);
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Amanda Ng";
@@ -259,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C429B231FA167810005753C /* ViewController.swift in Sources */,
+				8C429B511FA16E900005753C /* ViewController.swift in Sources */,
+				8C0CA9C51FA2E08C00FFA3E0 /* Box.swift in Sources */,
 				8C429B211FA167810005753C /* AppDelegate.swift in Sources */,
+				8CAFC57F1FA174F700ED24AD /* SphereNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +438,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPQ3M2362F;
 				INFOPLIST_FILE = siaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wy.siaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +454,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPQ3M2362F;
 				INFOPLIST_FILE = siaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wy.siaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
